@@ -1,3 +1,3 @@
-# KotlinSandox
+# KotlinSandbox
 
 Kotlin Practice
