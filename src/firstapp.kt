@@ -1,4 +1,5 @@
+// first method in Kotlin
 fun main(args : Array<String>) {
-    // first method
     println("Hello World")
 }
+|
