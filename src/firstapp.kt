@@ -38,5 +38,14 @@ fun ifStatement() {
         "$num is equal to zero"
     }
     println(result)
+}
 
+fun forLoop() {
+    for (i in 1..6) {
+        print("$i ")
+    }
+    println()
+    for (i in 1..10 step 3) {
+        print("$i ")
+    }
 }
