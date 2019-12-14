@@ -5,6 +5,7 @@ fun main(args : Array<String>) {
     var sum = sum(3,5)
     println(sum)
     operator()
+    ifStatement()
 }
 
 fun sum(a: Int, b : Int): Int {
@@ -21,4 +22,21 @@ fun conversion() {
     var myLongNumber = 10L
     var myNumber: Int = myLongNumber.toInt()
     println(myNumber)
+}
+
+fun ifStatement() {
+
+
+    var num =15
+    var result = if ( num > 0){
+        "$num is positive number"
+    }
+    else if( num < 0){
+        "$num is negative number"
+    }
+    else{
+        "$num is equal to zero"
+    }
+    println(result)
+
 }
