@@ -26,8 +26,6 @@ fun conversion() {
 }
 
 fun ifStatement() {
-
-
     var num =15
     var result = if ( num > 0){
         "$num is positive number"
@@ -67,6 +65,7 @@ fun forLoop() {
     for ((index,value) in name.withIndex())
         println("Element at $index th index is $value")
 }
+
 
 fun whenStatement() {
     var str = "mars"
