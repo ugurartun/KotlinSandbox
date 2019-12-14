@@ -6,6 +6,7 @@ fun main(args : Array<String>) {
     println(sum)
     operator()
     ifStatement()
+    whenStatement()
 }
 
 fun sum(a: Int, b : Int): Int {
@@ -65,4 +66,14 @@ fun forLoop() {
     // traversing string using withIndex() library function
     for ((index,value) in name.withIndex())
         println("Element at $index th index is $value")
+}
+
+fun whenStatement() {
+    var str = "mars"
+    when(str) {
+        "Sun" -> println("Sun is a Star")
+        "Moon" -> println("Moon is a Satellite")
+        "Earth" -> println("Earth is a planet")
+        else -> println("I don't know anything about it")
+    }
 }
