@@ -7,6 +7,8 @@ fun main(args : Array<String>) {
     operator()
     ifStatement()
     whenStatement()
+    whenAsExpression(5)
+    whenAsExpression(15)
 }
 
 fun sum(a: Int, b : Int): Int {
@@ -75,4 +77,25 @@ fun whenStatement() {
         "Earth" -> println("Earth is a planet")
         else -> println("I don't know anything about it")
     }
+}
+
+fun whenAsExpression(monthOfYear : Int) {
+    var month = when(monthOfYear){
+        1->"January"
+        2->"Febuary"
+        3->"March"
+        4->"April"
+        5->"May"
+        6->"June"
+        7->"July"
+        8->"August"
+        9->"September"
+        10->"October"
+        11->"November"
+        12->"December"
+        else -> {
+            println("Not a month of year")
+        }
+    }
+    println(month)
 }
