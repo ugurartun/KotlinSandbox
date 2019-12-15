@@ -9,6 +9,7 @@ fun main(args : Array<String>) {
     whenStatement()
     whenAsExpression(5)
     whenAsExpression(15)
+    createArray()
 }
 
 fun sum(a: Int, b : Int): Int {
@@ -98,4 +99,13 @@ fun whenAsExpression(monthOfYear : Int) {
         }
     }
     println(month)
+}
+
+fun createArray() {
+    var numAray = arrayOf(1,2,3)
+    val num = arrayOf<Int>(1,2,3)
+    for (i in 0..numAray.size-1)
+    {
+        print(" "+num[i])
+    }
 }
