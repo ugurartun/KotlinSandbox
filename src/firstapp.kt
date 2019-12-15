@@ -10,6 +10,7 @@ fun main(args : Array<String>) {
     whenAsExpression(5)
     whenAsExpression(15)
     createArray()
+    defaultArgFunc()
 }
 
 fun sum(a: Int, b : Int): Int {
@@ -104,8 +105,22 @@ fun whenAsExpression(monthOfYear : Int) {
 fun createArray() {
     var numAray = arrayOf(1,2,3)
     val num = arrayOf<Int>(1,2,3)
+    val num2 = Array(5, {i -> i*2})
     for (i in 0..numAray.size-1)
     {
         print(" "+num[i])
     }
+    println()
+    for (i in 0..num2.size-1)
+    {
+        println(num2[i])
+    }
+    println(num2.get(2))
+
+}
+
+fun defaultArgFunc(name: String="Praaven", standard: String="IX", roll_no: Int=11) {
+    println("Name of the student is: $name")
+    println("Standard of the student is: $standard")
+    println("Roll no of the student is: $roll_no")
 }
