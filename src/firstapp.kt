@@ -1,3 +1,6 @@
+import src.Add
+import src.Car
+import src.DerivedClass
 
 fun main(args : Array<String>) {
     val myName = "Gaurav"
@@ -20,7 +23,14 @@ fun main(args : Array<String>) {
     val emp = Employee(18018, "Sagnik")
     println("Employee Id : " +  emp.id)
     println("Employee IName : " +  emp.name)
-
+    val add = Add(5, 6)
+    val derivedClass = DerivedClass()
+    derivedClass.B()
+    derivedClass.A()
+    val car = Car()
+    car.start()
+    car.stop()
+    car.add(4)
 }
 
 class AddClass constructor(a: Int,b:Int)
