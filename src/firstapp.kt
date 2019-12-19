@@ -16,7 +16,11 @@ fun main(args : Array<String>) {
     val sumFunc = {a: Int , b: Int -> a + b}
     println(sumFunc(3,5))
     val addClass = AddClass(3, 4)
-    print(addClass.c)
+    println(addClass.c)
+    val emp = Employee(18018, "Sagnik")
+    println("Employee Id : " +  emp.id)
+    println("Employee IName : " +  emp.name)
+
 }
 
 class AddClass constructor(a: Int,b:Int)
@@ -24,6 +28,19 @@ class AddClass constructor(a: Int,b:Int)
     var c = a+b;
 }
 
+class Employee(emp_id : Int , emp_name: String) {
+    val id: Int
+    var name: String
+
+    // initializer block
+    init {
+        id = emp_id
+        name = emp_name
+
+        println("Employee id is: $id")
+        println("Employee name: $name")
+    }
+}
 
 fun sum(a: Int, b : Int): Int {
     return a+b
