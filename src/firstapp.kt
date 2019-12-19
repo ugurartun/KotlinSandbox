@@ -11,7 +11,19 @@ fun main(args : Array<String>) {
     whenAsExpression(15)
     createArray()
     defaultArgFunc()
+    val company = { println("GeeksForGeeks")}
+    company()
+    val sumFunc = {a: Int , b: Int -> a + b}
+    println(sumFunc(3,5))
+    val addClass = AddClass(3, 4)
+    print(addClass.c)
 }
+
+class AddClass constructor(a: Int,b:Int)
+{
+    var c = a+b;
+}
+
 
 fun sum(a: Int, b : Int): Int {
     return a+b
