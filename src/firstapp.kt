@@ -1,6 +1,3 @@
-import src.Add
-import src.Car
-import src.DerivedClass
 
 fun main(args : Array<String>) {
     val myName = "Gaurav"
@@ -14,42 +11,12 @@ fun main(args : Array<String>) {
     whenAsExpression(15)
     createArray()
     defaultArgFunc()
-    val company = { println("GeeksForGeeks")}
-    company()
-    val sumFunc = {a: Int , b: Int -> a + b}
-    println(sumFunc(3,5))
-    val addClass = AddClass(3, 4)
-    println(addClass.c)
-    val emp = Employee(18018, "Sagnik")
-    println("Employee Id : " +  emp.id)
-    println("Employee IName : " +  emp.name)
-    val add = Add(5, 6)
-    val derivedClass = DerivedClass()
-    derivedClass.B()
-    derivedClass.A()
-    val car = Car()
-    car.start()
-    car.stop()
-    car.add(4)
-}
+    val name_of_student = "Gaurav"
+    val standard_of_student = "VIII"
+    val roll_no_of_student = 11
+    defaultArgFunc(name_of_student, standard_of_student)
+    defaultArgFunc(name=name_of_student,roll_no=roll_no_of_student)
 
-class AddClass constructor(a: Int,b:Int)
-{
-    var c = a+b;
-}
-
-class Employee(emp_id : Int , emp_name: String) {
-    val id: Int
-    var name: String
-
-    // initializer block
-    init {
-        id = emp_id
-        name = emp_name
-
-        println("Employee id is: $id")
-        println("Employee name: $name")
-    }
 }
 
 fun sum(a: Int, b : Int): Int {
