@@ -130,7 +130,6 @@ fun createArray() {
         println(num2[i])
     }
     println(num2.get(2))
-
 }
 
 fun defaultArgFunc(name: String="Praaven", standard: String="IX", roll_no: Int=11) {
