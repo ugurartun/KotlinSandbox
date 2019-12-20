@@ -17,6 +17,11 @@ fun main(args : Array<String>) {
     defaultArgFunc(name_of_student, standard_of_student)
     defaultArgFunc(name=name_of_student,roll_no=roll_no_of_student)
 
+    for (day in Day.values()) {
+        println("${day.ordinal} = ${day.name}")
+    }
+    println("${Day.valueOf(" WEDNESDAY ")}")
+
 }
 
 fun sum(a: Int, b : Int): Int {
