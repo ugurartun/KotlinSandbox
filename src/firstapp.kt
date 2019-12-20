@@ -20,7 +20,10 @@ fun main(args : Array<String>) {
     for (day in Day.values()) {
         println("${day.ordinal} = ${day.name}")
     }
-    println("${Day.valueOf(" WEDNESDAY ")}")
+    println("${Day.valueOf("SUNDAY")}")
+    println(Day.SUNDAY.dayStr)
+    var name : Company<String> = Company<String>("GeeksForGeeks")
+    var rank : Company<Int> = Company<Int>(12)
 
 }
 
