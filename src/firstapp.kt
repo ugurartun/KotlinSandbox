@@ -28,6 +28,7 @@ fun main(args : Array<String>) {
     var s2: String? = "GeeksforGeeks"
     s2 = null // ok
     print(s2)
+    nullCheck()
 
 }
 
@@ -140,4 +141,24 @@ fun defaultArgFunc(name: String="Praaven", standard: String="IX", roll_no: Int=1
     println("Name of the student is: $name")
     println("Standard of the student is: $standard")
     println("Roll no of the student is: $roll_no")
+}
+
+
+
+fun nullCheck() {
+    var s: String? = "GeeksforGeeks"
+    println(s)
+    if (s != null) {
+        println("String of length ${s.length}")
+    } else {
+        println("Null string")
+    }
+    // assign null
+    s = null
+    println(s)
+    if (s != null) {
+        println("String of length ${s.length}")
+    } else {
+        println("Null String")
+    }
 }
