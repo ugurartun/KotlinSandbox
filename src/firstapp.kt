@@ -25,6 +25,10 @@ fun main(args : Array<String>) {
     var name : Company<String> = Company<String>("GeeksForGeeks")
     var rank : Company<Int> = Company<Int>(12)
 
+    var s2: String? = "GeeksforGeeks"
+    s2 = null // ok
+    print(s2)
+
 }
 
 fun sum(a: Int, b : Int): Int {
