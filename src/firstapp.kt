@@ -25,6 +25,11 @@ fun main(args : Array<String>) {
     var name : Company<String> = Company<String>("GeeksForGeeks")
     var rank : Company<Int> = Company<Int>(12)
 
+    var s2: String? = "GeeksforGeeks"
+    s2 = null // ok
+    print(s2)
+    nullCheck()
+
 }
 
 fun sum(a: Int, b : Int): Int {
@@ -130,11 +135,30 @@ fun createArray() {
         println(num2[i])
     }
     println(num2.get(2))
-
 }
 
 fun defaultArgFunc(name: String="Praaven", standard: String="IX", roll_no: Int=11) {
     println("Name of the student is: $name")
     println("Standard of the student is: $standard")
     println("Roll no of the student is: $roll_no")
+}
+
+
+
+fun nullCheck() {
+    var s: String? = "GeeksforGeeks"
+    println(s)
+    if (s != null) {
+        println("String of length ${s.length}")
+    } else {
+        println("Null string")
+    }
+    // assign null
+    s = null
+    println(s)
+    if (s != null) {
+        println("String of length ${s.length}")
+    } else {
+        println("Null String")
+    }
 }
