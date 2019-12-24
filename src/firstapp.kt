@@ -40,6 +40,7 @@ fun operator() {
     var a = 20
     var b = 4
     println("a + b = " + a.plus(b))
+    println(a.compareTo(b))
 }
 
 fun conversion() {
