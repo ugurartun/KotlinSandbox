@@ -24,10 +24,10 @@ fun main(args : Array<String>) {
     println(Day.SUNDAY.dayStr)
     var name : Company<String> = Company<String>("GeeksForGeeks")
     var rank : Company<Int> = Company<Int>(12)
-
+    println(name_of_student.decapitalize())
     var s2: String? = "GeeksforGeeks"
     s2 = null // ok
-    print(s2)
+    println(s2)
     nullCheck()
 
 }
