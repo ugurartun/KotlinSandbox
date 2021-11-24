@@ -4,4 +4,7 @@ class Company<T> (text : T){
     init{
         println(x)
     }
+
+
+    
 }
